@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+ 
+using namespace std;
+ 
+int main() {
+	float M[12][12], Soma[12], Media;
+	int L, i, j;
+	char T;
+	
+	cin >> L;
+		cin >> T;
+	for ( int i = 0; i < 12; i++ )
+      for ( int j = 0; j < 12; j++ ) {
+    	cin >> M[i][j];
+    	Soma[i] = Soma[i] + M[i][j];
+    	}
+    	
+    	switch(T) {
+    		case 'S':
+		cout << fixed << setprecision(1) << Soma[L] << endl;
+		break;
+		
+			case 'M':
+		Media = Soma[L] / 12;
+		cout << fixed << setprecision(1) << Media << endl; }
+	
+	return 0;
+}

@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int X, N[10], V;
+	
+	cin >> V;
+	if (V >= 50){
+	cout << "Entre com um numero inteiro menor que 50" << endl; }
+	else {
+		
+
+	N[0] = V;
+	N[1] = V * 2;
+	N[2] = V * 4;
+	N[3] = V * 8;
+	N[4] = V * 16;
+	N[5] = V * 32;
+	N[6] = V * 64;
+	N[7] = V * 128;
+	N[8] = V * 256;
+	N[9] = V * 512;
+	
+	
+	for(int i = 0; i < 10; i++){
+	cout << "N[" << i << "] = " << N[i] << endl;
+	}
+	}
+	return 0;
+}
